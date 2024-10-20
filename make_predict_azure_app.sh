@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-PORT=5000
+PORT=433
 echo "Port: $PORT"
 
 # POST method predict
@@ -25,5 +25,5 @@ curl -d '{
    }
 }'\
      -H "Content-Type: application/json" \
-     -X POST https://ccon-prod-westeurope-aci-02.servicebus.windows.net/cc-GJBB-75D9EC8E/proxy/5000/predict 
+     -X POST https://newwebappflask-bbbccbg3ceevhse4.canadacentral-01.azurewebsites.net:$PORT/predict 
      #your application name <yourappname>goes here
