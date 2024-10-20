@@ -25,4 +25,4 @@ curl -d '{
    }
 }'\
      -H "Content-Type: application/json" \
-     -X POST http://localhost:$PORT/predict
+     -X POST https://ccon-prod-westeurope-aci-02.servicebus.windows.net/cc-GJBB-75D9EC8E/proxy/5000
