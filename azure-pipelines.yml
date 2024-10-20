@@ -67,5 +67,5 @@ stages:
             inputs:
               azureSubscription: $(azureServiceConnectionId)
               appName: $(webAppName)
-              package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
+              package: /home/devopsagent/myagent/_work/1.zip
               appType: webApp
