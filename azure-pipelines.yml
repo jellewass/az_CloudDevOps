@@ -22,8 +22,8 @@ stages:
     pool: myAgentPool
     steps: 
     - script: |
-        curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-        python3 get-pip.py
+        sudo apt update
+        sudo apt install -y python3-pip
         export PATH=$HOME/.local/bin:$PATH
         python3 -m pip install -r requirements.txt
       workingDirectory: $(projectRoot)
