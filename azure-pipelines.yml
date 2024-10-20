@@ -23,7 +23,7 @@ stages:
     steps: 
     - script: |
         export PATH=$HOME/.local/bin:$PATH
-        python3.8 -m pip install -r requirements.txt
+        python3 -m pip install -r requirements.txt
       workingDirectory: $(projectRoot)
       displayName: 'Step - Install requirements.txt'
     
