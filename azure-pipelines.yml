@@ -23,9 +23,12 @@ stages:
     steps: 
     - script: |
         sudo apt update
-        sudo apt install -y python3-pip
-        export PATH=$HOME/.local/bin:$PATH
-        python3.9 -m pip install -r requirements.txt
+        sudo apt install -y python3-venv python3-full
+
+        # Create and activate a virtual environment
+        python3 -m venv myenv
+        source myenv/bin/activate
+        python3 -m pip install -r requirements.txt
       workingDirectory: $(projectRoot)
       displayName: 'Step - Install requirements.txt'
     
