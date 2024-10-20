@@ -24,6 +24,9 @@ stages:
     steps: 
     - script: |
         sudo apt update
+              
+        sudo apt install -y python3-pip python3-distutils
+
         sudo apt install -y python3-venv python3-full
 
         # Create and activate a virtual environment
